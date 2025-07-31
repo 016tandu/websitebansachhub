@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Cửa Hàng Sách</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        .register-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 40px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .register-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #c92127;
+        }
+        .register-form .form-group {
+            margin-bottom: 15px;
+        }
+        .register-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .register-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .register-form button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #c92127;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .register-form button:hover {
+            background-color: #a71c21;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="site-main-content">
+        <div class="register-container">
+            <h1>Đăng Ký Tài Khoản</h1>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Xác nhận mật khẩu</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Đăng Ký</button>
+            </form>
+            <div class="form-footer">
+                <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="JavaScript/header.js"></script>
+</body>
+</html>

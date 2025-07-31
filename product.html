@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Cửa Hàng Sách</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        .product-detail-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            gap: 40px;
+        }
+        .product-image-gallery {
+            flex: 1;
+        }
+        .product-image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-info-details {
+            flex: 1;
+        }
+        .product-info-details h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .product-info-details .product-rating {
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+        .product-info-details .price {
+            font-size: 24px;
+            color: #c92127;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .product-info-details .description {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .add-to-cart-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #c92127;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="site-main-content">
+        <div class="product-detail-container">
+            <div class="product-image-gallery">
+                <img src="assets/10009.jpg" alt="Bìa sách mock">
+            </div>
+            <div class="product-info-details">
+                <h1>Tên Sách Mockup</h1>
+                <div class="product-rating">★★★★☆</div>
+                <div class="price">123,456 đ</div>
+                <div class="description">
+                    <p>Đây là mô tả chi tiết cho một cuốn sách mẫu. Nội dung ở đây sẽ giới thiệu về tác phẩm, tác giả, và những điểm nổi bật của cuốn sách để thu hút người đọc.</p>
+                    <p>Thông tin chi tiết về nhà xuất bản, số trang, kích thước, và định dạng cũng có thể được liệt kê ở đây.</p>
+                </div>
+                <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="JavaScript/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<header class="site-header">
+  <div class="header-container">
+    <!-- 1. Logo -->
+    <div class="logo">
+      <a href="/">
+        <img src="assets/logo.png" alt="Logo Nhà Sách" />
+      </a>
+    </div>
+
+    <!-- 2. Menu danh mục -->
+    <div class="category-menu-container">
+      <!-- Nút "Danh Mục" để kích hoạt menu -->
+      <div class="category-menu" id="category-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+        <span>Danh Mục</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <!-- Dropdown Menu -->
+      <ul class="category-dropdown" id="category-dropdown-list">
+        <li><a href="#">Tiểu thuyết</a></li>
+        <li><a href="#">Ngoại văn</a></li>
+        <li><a href="#">Sách giáo khoa</a></li>
+        <li><a href="#">Truyện tranh</a></li>
+      </ul>
+    </div>
+    <!-- 3. Thanh tìm kiếm -->
+    <div class="search-area">
+      <form action="/search" method="get">
+        <input
+          type="text"
+          name="q"
+          placeholder="Tìm kiếm sản phẩm bạn muốn..."
+        />
+        <button type="submit" aria-label="Tìm kiếm">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- 4. Tài khoản và Giỏ hàng -->
+    <div class="user-actions">
+      <a href="login.html" class="user-account">
+        <i class="fa-solid fa-user"></i>
+        <span>Tài Khoản</span>
+      </a>
+      <a href="cart.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Giỏ hàng</span>
+      </a>
+      <div class="language-selector">
+        <!-- Nút hiển thị ngôn ngữ hiện tại và mở dropdown -->
+        <div class="language-current" id="lang-toggle">
+          <!-- Thêm thẻ img cho cờ -->
+          <img
+            src="https://flagcdn.com/w20/vn.png"
+            alt="Cờ Việt Nam"
+            id="current-lang-flag"
+            class="lang-flag"
+          />
+          <span id="current-lang-text">Tiếng Việt</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <!-- Dropdown chứa các lựa chọn ngôn ngữ -->
+        <ul class="language-dropdown" id="lang-dropdown">
+          <li>
+            <a href="#">
+              <img
+                src="https://flagcdn.com/w20/vn.png"
+                alt="Cờ Việt Nam"
+                class="lang-flag"
+              />
+              <span>Tiếng Việt</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://flagcdn.com/w20/gb.png"
+                alt="Cờ Vương quốc Anh"
+                class="lang-flag"
+              />
+              <span>English</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/heroselection.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Cửa Hàng Sách</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+  </head>
+  <body>
+    <!-- ======================= HEADER ======================= -->
+    <div id="header"></div>
+
+    <!-- ======================= NAVIGATION ======================= -->
+    <nav class="site-navigation">
+      <!-- ======================= PHẦN THÂN TRANG (HERO SECTION) ======================= -->
+      <main class="hero-section">
+        <div class="hero-grid-container">
+          <!-- ===== CỘT 1: CỘT CHÍNH BÊN TRÁI ===== -->
+          <div class="hero-main-column">
+            <!-- 1A. CAROUSEL -->
+            <div class="carousel-container">
+              <div class="carousel-slides">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                  <img
+                    src="assets/carousel10001.png"
+                    alt="Banner quảng cáo 1"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                  <img
+                    src="assets/carousel10002.png"
+                    alt="Banner quảng cáo 2"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                  <img
+                    src="assets/carousel10003.png"
+                    alt="Banner quảng cáo 3"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                  <img
+                    src="assets/carousel10004.png"
+                    alt="Banner quảng cáo 4"
+                  />
+                </div>
+              </div>
+              <!-- Nút điều khiển Carousel -->
+              <button class="carousel-btn prev" id="carousel-prev">❮</button>
+              <button class="carousel-btn next" id="carousel-next">❯</button>
+              <!-- Dấu chấm chỉ vị trí slide -->
+              <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+
+            <!-- 1B. CÁC BANNER NHỎ BÊN DƯỚI -->
+            <div class="promo-banners-row">
+              <a href="product.html" class="promo-banner-item">
+                <img src="assets/10003.jpg" alt="Tủ sách bắt đầu" />
+              </a>
+              <a href="product.html" class="promo-banner-item">
+                <img
+                  src="assets/10004.jpg"
+                  alt="Cùng trẻ phát triển"
+                />
+              </a>
+              <a href="product.html" class="promo-banner-item">
+                <img
+                  src="assets/10005.jpg"
+                  alt="Sách nuôi dưỡng tư duy"
+                />
+              </a>
+              <a href="product.html" class="promo-banner-item">
+                <img
+                  src="assets/10006.jpg"
+                  alt="Sách giải mã trí tuệ"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- ===== CỘT 2: SIDEBAR BÊN PHẢI ===== -->
+          <div class="hero-sidebar-column">
+            <a href="#" class="sidebar-banner-item">
+              <img src="assets/10007.jpg" alt="Đường mây trắng" />
+            </a>
+            <a href="#" class="sidebar-banner-item">
+              <img src="assets/10008.jpg" alt="Xóm vắng Sài Gòn" />
+            </a>
+          </div>
+        </div>
+      </main>
+    </nav>
+
+    <main class="site-main-content">
+      <!-- ======================= KHU VỰC 1: SÁCH GIẢM GIÁ (CAROUSEL) ======================= -->
+      <section class="product-section product-carousel-section">
+        <!-- Tiêu đề và nút điều khiển -->
+        <div class="section-header">
+          <h2>Deal Hot - Giảm Sốc</h2>
+          <div class="carousel-nav" id="nav-deal-hot">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+          </div>
+        </div>
+        <!-- Vùng chứa carousel -->
+        <div class="product-carousel-wrapper">
+          <div class="product-carousel">
+            <!-- Product Card 1 -->
+            <div class="product-card style-1">
+              <div class="product-image-container">
+                <a href="product.html"
+                  ><img src="assets/10009.jpg" alt="Tên sách"
+                /></a>
+                <div class="discount-badge">Giảm 40%</div>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★★★★</div>
+                <h3 class="product-title">
+                  <a href="product.html"
+                    >Tâm Thành và Lộc Đời (Kèm CD "Cuộc đời hoài phí")</a
+                  >
+                </h3>
+                <div class="product-price">
+                  <span class="original-price">150,000 đ</span>
+                  <span class="sale-price">90,000 đ</span>
+                </div>
+                <button class="add-to-cart-btn">CHỌN MUA</button>
+              </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card style-1">
+              <div class="product-image-container">
+                <a href="product.html"
+                  ><img src="assets/10003.jpg" alt="Tên sách"
+                /></a>
+                <div class="discount-badge">Giảm 30%</div>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">★★☆☆☆</div>
+                <h3 class="product-title"><a href="product.html">Xứ Tuyết</a></h3>
+                <div class="product-price">
+                  <span class="original-price">85,000 đ</span>
+                  <span class="sale-price">59,500 đ</span>
+                </div>
+                <button class="add-to-cart-btn">CHỌN MUA</button>
+              </div>
+            </div>
+            <!-- ... Lặp lại các product card khác cho carousel ... -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= KHU VỰC 2: SÁCH TIẾNG VIỆT (GRID) ======================= -->
+      <section class="product-section">
+        <div class="section-header">
+          <h2>Sách Tiếng Việt</h2>
+        </div>
+        <nav class="category-tabs">
+          <a href="#" class="active">Văn Học</a>
+          <a href="#">Kinh Tế</a>
+          <a href="#">Kỹ Năng</a>
+          <a href="#">Thiếu Nhi</a>
+          <a href="#">Tuổi Mới Lớn</a>
+        </nav>
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card style-2">
+            <a href="product.html"
+              ><img src="assets/10004.jpg" alt="Tên sách"
+            /></a>
+            <div class="product-info">
+              <h3 class="product-title">
+                <a href="product.html">Tết Ở Làng Địa Ngục (Bản đặc biệt)</a>
+              </h3>
+              <div class="product-rating">☆☆☆☆☆</div>
+              <p class="stock-status">Còn hàng</p>
+              <span class="price">309,000 đ</span>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="product-card style-2">
+            <a href="product.html"
+              ><img src="assets/10005.jpg" alt="Tên sách"
+            /></a>
+            <div class="product-info">
+              <h3 class="product-title">
+                <a href="product.html">Trúng Số Độc Đắc - Vũ Trọng Phụng</a>
+              </h3>
+              <div class="product-rating">☆☆☆☆☆</div>
+              <p class="stock-status">Còn hàng</p>
+              <span class="price">78,000 đ</span>
+            </div>
+          </div>
+          <!-- ... Lặp lại các product card khác ... -->
+        </div>
+      </section>
+
+      <!-- ======================= KHU VỰC 3: SÁCH GIÁO KHOA (CAROUSEL) ======================= -->
+      <section class="product-section product-carousel-section">
+        <div class="section-header">
+          <div class="section-title-container">
+            <span class="subtitle">BOOK</span>
+            <h2>Sách Giáo Khoa</h2>
+          </div>
+          <div class="carousel-nav" id="nav-sgk">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+          </div>
+        </div>
+        <nav class="category-tabs">
+          <a href="#" class="active">Bộ Chân Trời Sáng Tạo</a>
+          <a href="#">Bộ Cánh Diều Vàng</a>
+          <a href="#">Bộ Kết Nối Tri Thức</a>
+        </nav>
+        <div class="product-carousel-wrapper">
+          <div class="product-carousel">
+            <!-- Product Card 1 -->
+            <div class="product-card style-3">
+              <a href="product.html"
+                ><img src="assets/10006.jpg" alt="Tên sách"
+              /></a>
+              <div class="product-info">
+                <h3 class="product-title">
+                  <a href="product.html">Tập Bản Đồ Và Tư Liệu Lịch Sử Lớp 12</a>
+                </h3>
+                <div class="product-rating">☆☆☆☆☆</div>
+                <span class="price">38,000 đ</span>
+              </div>
+            </div>
+            <!-- ... Lặp lại các product card khác cho carousel ... -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ======================= FOOTER ======================= -->
+
+    <div id="footer"></div>
+    <script src="JavaScript/header.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slidesContainer = document.querySelector(".carousel-slides");
+        const slides = document.querySelectorAll(".carousel-slide");
+        const prevBtn = document.getElementById("carousel-prev");
+        const nextBtn = document.getElementById("carousel-next");
+        const dotsContainer = document.getElementById("carousel-dots");
+
+        let currentIndex = 0;
+        let slideInterval;
+
+        // Tạo các dấu chấm tương ứng với số lượng slide
+        slides.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel-dot");
+          if (index === 0) dot.classList.add("active");
+          dot.addEventListener("click", () => {
+            goToSlide(index);
+            resetInterval();
+          });
+          dotsContainer.appendChild(dot);
+        });
+        const dots = document.querySelectorAll(".carousel-dot");
+
+        function goToSlide(index) {
+          slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+          dots.forEach((dot) => dot.classList.remove("active"));
+          dots[index].classList.add("active");
+          currentIndex = index;
+        }
+
+        function nextSlide() {
+          const newIndex = (currentIndex + 1) % slides.length;
+          goToSlide(newIndex);
+        }
+
+        function prevSlide() {
+          const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+          goToSlide(newIndex);
+        }
+
+        function startInterval() {
+          slideInterval = setInterval(nextSlide, 5000); // Tự động chuyển slide sau 5 giây
+        }
+
+        function resetInterval() {
+          clearInterval(slideInterval);
+          startInterval();
+        }
+
+        // Gán sự kiện cho các nút
+        nextBtn.addEventListener("click", () => {
+          nextSlide();
+          resetInterval();
+        });
+        prevBtn.addEventListener("click", () => {
+          prevSlide();
+          resetInterval();
+        });
+
+        // Khởi chạy
+        startInterval();
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy tất cả các khu vực carousel trên trang
+        const carouselSections = document.querySelectorAll(
+          ".product-carousel-section"
+        );
+
+        carouselSections.forEach((section) => {
+          const carousel = section.querySelector(".product-carousel");
+          const nav = section.querySelector(".carousel-nav");
+          const prevBtn = nav.querySelector(".prev");
+          const nextBtn = nav.querySelector(".next");
+
+          // Tính toán khoảng cách trượt, ví dụ = chiều rộng của 1 card + khoảng cách
+          const scrollAmount =
+            carousel.querySelector(".product-card").offsetWidth + 20;
+
+          nextBtn.addEventListener("click", () => {
+            carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+          });
+
+          prevBtn.addEventListener("click", () => {
+            carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+          });
+        });
+      });
+    </script>
+
+    <script>
+      // chèn header
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+
+      // chèn footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
